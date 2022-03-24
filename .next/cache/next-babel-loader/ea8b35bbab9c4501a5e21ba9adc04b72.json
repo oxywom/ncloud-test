@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const MenuItems = [{\n  title: '물건 빌려줘'\n}, {\n  title: '물건 빌려줄께'\n}, {\n  title: '힘을 빌려줘'\n}, {\n  title: '힘을 빌려줄께'\n}, {\n  title: '같이 하자'\n}];","map":null,"metadata":{},"sourceType":"module"}
