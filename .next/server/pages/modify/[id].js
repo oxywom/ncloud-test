@@ -2020,7 +2020,7 @@ function* userSaga() {
 
 
 
-external_axios_default.a.defaults.baseURL = 'http://localhost:3065';
+external_axios_default.a.defaults.baseURL = 'http://115.85.180.157:3065';
 external_axios_default.a.defaults.withCredentials = true;
 function* rootSaga() {
   yield Object(effects_["all"])([Object(effects_["fork"])(postSaga), Object(effects_["fork"])(userSaga)]);
