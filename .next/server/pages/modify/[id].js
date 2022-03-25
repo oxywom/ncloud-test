@@ -181,16 +181,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_4_jpeg__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_components_4_jpeg__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _components_5_jpg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__("DxX1");
 /* harmony import */ var _components_5_jpg__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_components_5_jpg__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _ant_design_icons__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__("nZwT");
-/* harmony import */ var _ant_design_icons__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_ant_design_icons__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _store_configureStore__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__("AQn3");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__("zr5I");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var redux_saga__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__("1fKG");
-/* harmony import */ var redux_saga__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(redux_saga__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _store_configureStore__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__("AQn3");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__("zr5I");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var redux_saga__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__("1fKG");
+/* harmony import */ var redux_saga__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(redux_saga__WEBPACK_IMPORTED_MODULE_16__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
 
 
 
@@ -540,17 +536,17 @@ function Modify() {
 }
 
 ;
-const getServerSideProps = _store_configureStore__WEBPACK_IMPORTED_MODULE_15__[/* default */ "a"].getServerSideProps(async context => {
+const getServerSideProps = _store_configureStore__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"].getServerSideProps(async context => {
   const cookie = context.req ? context.req.headers.cookie : '';
-  axios__WEBPACK_IMPORTED_MODULE_16___default.a.defaults.headers.Cookie = cookie;
-  axios__WEBPACK_IMPORTED_MODULE_16___default.a.defaults.headers.Cookie = '';
+  axios__WEBPACK_IMPORTED_MODULE_15___default.a.defaults.headers.Cookie = cookie;
+  axios__WEBPACK_IMPORTED_MODULE_15___default.a.defaults.headers.Cookie = '';
 
   if (context.req && cookie) {
     // 타 유저간 쿠키가 공유되는 문제를 방지하기 위함
-    axios__WEBPACK_IMPORTED_MODULE_16___default.a.defaults.headers.Cookie = cookie;
+    axios__WEBPACK_IMPORTED_MODULE_15___default.a.defaults.headers.Cookie = cookie;
   }
 
-  context.store.dispatch(redux_saga__WEBPACK_IMPORTED_MODULE_17__["END"]);
+  context.store.dispatch(redux_saga__WEBPACK_IMPORTED_MODULE_16__["END"]);
   await context.store.sagaTask.toPromise();
 });
 /* harmony default export */ __webpack_exports__["default"] = (Modify);
@@ -750,12 +746,6 @@ var logo2_default = /*#__PURE__*/__webpack_require__.n(logo2);
 var next_link = __webpack_require__("YFqc");
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 
-// EXTERNAL MODULE: external "react-bootstrap/Navbar"
-var Navbar_ = __webpack_require__("lFrT");
-
-// EXTERNAL MODULE: external "react-bootstrap/Button"
-var Button_ = __webpack_require__("vVTy");
-
 // EXTERNAL MODULE: external "next/router"
 var router_ = __webpack_require__("4Q3z");
 var router_default = /*#__PURE__*/__webpack_require__.n(router_);
@@ -772,14 +762,8 @@ var useInput = __webpack_require__("3zrx");
 // EXTERNAL MODULE: ./components/SearchLocation.js
 var SearchLocation = __webpack_require__("G/SD");
 
-// EXTERNAL MODULE: ./reducers/post.js
-var post = __webpack_require__("p+NB");
-
 // CONCATENATED MODULE: ./components/Layout.js
 var __jsx = external_react_default.a.createElement;
-
-
-
 
 
 
@@ -1285,7 +1269,6 @@ var user = __webpack_require__("LAVF");
 var post = __webpack_require__("p+NB");
 
 // CONCATENATED MODULE: ./reducers/index.js
-
 
 
  // (이전상태,액션) => 다음상태
@@ -4104,13 +4087,6 @@ module.exports = "/_next/static/images/광고2-e0a9c449fc5b3633d5131af325943d97.
 
 /***/ }),
 
-/***/ "lFrT":
-/***/ (function(module, exports) {
-
-module.exports = require("react-bootstrap/Navbar");
-
-/***/ }),
-
 /***/ "mBmF":
 /***/ (function(module, exports) {
 
@@ -4896,13 +4872,6 @@ module.exports = require("redux");
 /***/ (function(module, exports) {
 
 module.exports = require("redux-devtools-extension");
-
-/***/ }),
-
-/***/ "vVTy":
-/***/ (function(module, exports) {
-
-module.exports = require("react-bootstrap/Button");
 
 /***/ }),
 

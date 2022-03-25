@@ -351,12 +351,6 @@ var logo2_default = /*#__PURE__*/__webpack_require__.n(logo2);
 var next_link = __webpack_require__("YFqc");
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 
-// EXTERNAL MODULE: external "react-bootstrap/Navbar"
-var Navbar_ = __webpack_require__("lFrT");
-
-// EXTERNAL MODULE: external "react-bootstrap/Button"
-var Button_ = __webpack_require__("vVTy");
-
 // EXTERNAL MODULE: external "next/router"
 var router_ = __webpack_require__("4Q3z");
 var router_default = /*#__PURE__*/__webpack_require__.n(router_);
@@ -373,14 +367,8 @@ var useInput = __webpack_require__("3zrx");
 // EXTERNAL MODULE: ./components/SearchLocation.js
 var SearchLocation = __webpack_require__("G/SD");
 
-// EXTERNAL MODULE: ./reducers/post.js
-var post = __webpack_require__("p+NB");
-
 // CONCATENATED MODULE: ./components/Layout.js
 var __jsx = external_react_default.a.createElement;
-
-
-
 
 
 
@@ -878,7 +866,6 @@ var user = __webpack_require__("LAVF");
 var post = __webpack_require__("p+NB");
 
 // CONCATENATED MODULE: ./reducers/index.js
-
 
 
  // (이전상태,액션) => 다음상태
@@ -2046,9 +2033,6 @@ var external_react_redux_ = __webpack_require__("h74D");
 var router_ = __webpack_require__("4Q3z");
 var router_default = /*#__PURE__*/__webpack_require__.n(router_);
 
-// EXTERNAL MODULE: ./components/AppLayout/AppLayout.js + 1 modules
-var AppLayout = __webpack_require__("uUeM");
-
 // EXTERNAL MODULE: ./reducers/post.js
 var post = __webpack_require__("p+NB");
 
@@ -2208,9 +2192,6 @@ function PostImages({
 }
 
 /* harmony default export */ var components_PostImages = (PostImages);
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__("YFqc");
-
 // EXTERNAL MODULE: ./components/Layout.js + 1 modules
 var Layout = __webpack_require__("5Yp1");
 
@@ -2376,10 +2357,6 @@ var external_redux_saga_ = __webpack_require__("1fKG");
 
 // CONCATENATED MODULE: ./pages/post/[id].js
 var _id_jsx = external_react_default.a.createElement;
-
-
-
-
 
 
 
@@ -4352,13 +4329,6 @@ module.exports = "/_next/static/images/광고2-e0a9c449fc5b3633d5131af325943d97.
 
 /***/ }),
 
-/***/ "lFrT":
-/***/ (function(module, exports) {
-
-module.exports = require("react-bootstrap/Navbar");
-
-/***/ }),
-
 /***/ "mBmF":
 /***/ (function(module, exports) {
 
@@ -5147,187 +5117,10 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArAAAAK8CAYAAAAX
 
 /***/ }),
 
-/***/ "uUeM":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__("YFqc");
-var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
-
-// EXTERNAL MODULE: external "antd"
-var external_antd_ = __webpack_require__("Exp3");
-
-// EXTERNAL MODULE: ./node_modules/antd/dist/antd.css
-var antd = __webpack_require__("TpwP");
-
-// EXTERNAL MODULE: external "react-redux"
-var external_react_redux_ = __webpack_require__("h74D");
-
-// EXTERNAL MODULE: ./hooks/useInput.js
-var useInput = __webpack_require__("3zrx");
-
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
-
-// EXTERNAL MODULE: external "next/router"
-var router_ = __webpack_require__("4Q3z");
-var router_default = /*#__PURE__*/__webpack_require__.n(router_);
-
-// EXTERNAL MODULE: external "styled-components"
-var external_styled_components_ = __webpack_require__("Dtiu");
-var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(external_styled_components_);
-
-// CONCATENATED MODULE: ./components/AppLayout/styles.js
-
-
-const SidebarImg = external_styled_components_default.a.img.withConfig({
-  displayName: "styles__SidebarImg",
-  componentId: "sc-g48kqf-0"
-})(["width:40px;role:presantation;"]);
-const SidebarUl = external_styled_components_default.a.ul.withConfig({
-  displayName: "styles__SidebarUl",
-  componentId: "sc-g48kqf-1"
-})(["list-style-type:none;line-height:1;color:black;"]);
-const SidebarLi = external_styled_components_default.a.li.withConfig({
-  displayName: "styles__SidebarLi",
-  componentId: "sc-g48kqf-2"
-})(["cursor:pointer;transition:all 0.25s ease;line-height:70px;:hover{transform:scale(1.3,1.3);}color:black;"]);
-const SidebarDiv = external_styled_components_default.a.div.withConfig({
-  displayName: "styles__SidebarDiv",
-  componentId: "sc-g48kqf-3"
-})(["left:0px;border-radius:2rem;color:black;width:300px;height:1500px;font-weight:bold;line-height:250%;background:skyblue !important;"]);
-const LeftSidebar = external_styled_components_default.a.div.withConfig({
-  displayName: "styles__LeftSidebar",
-  componentId: "sc-g48kqf-4"
-})(["position:fixed;float:left;top:0px;left:9%;width:220px;height:1000px;background:skyblue !important;padding:0px 0;overflow:hidden;color:black;font-size:20px;z-index:10;"]);
-const Navbar = external_styled_components_default.a.div.withConfig({
-  displayName: "styles__Navbar",
-  componentId: "sc-g48kqf-5"
-})(["position:fixed;float:left;top:0px;left:29%;width:1800px;background:skyblue !important;padding:0px 0;overflow:hidden;color:black;font-size:20px;z-index:10;"]);
-const RightSidebar = external_styled_components_default.a.div.withConfig({
-  displayName: "styles__RightSidebar",
-  componentId: "sc-g48kqf-6"
-})(["position:fixed;top:1%;left:40%;padding:0px 0;overflow:hidden;color:black;font-size:20px;z-index:10;"]);
-const SearchInput = external_styled_components_default()(external_antd_["Input"].Search).withConfig({
-  displayName: "styles__SearchInput",
-  componentId: "sc-g48kqf-7"
-})(["vertical-align:middle;"]);
-// EXTERNAL MODULE: ./reducers/user.js
-var user = __webpack_require__("LAVF");
-
-// CONCATENATED MODULE: ./components/AppLayout/AppLayout.js
-var __jsx = external_react_default.a.createElement;
-
-
-
-
-
-
-
-
-
-
-function AppLayout({
-  children
-}) {
-  const [searchInput, onChangeSearchInput] = Object(useInput["a" /* default */])('');
-  const dispatch = Object(external_react_redux_["useDispatch"])();
-  const writeButtonStyle = {
-    left: "70%",
-    top: "2%",
-    zIndex: 20
-  };
-  const onSearch = Object(external_react_["useCallback"])(() => {
-    router_default.a.push(`/hashtag/${searchInput}`, undefined, {
-      shallow: true
-    });
-  }, [searchInput]);
-  const onWrite = Object(external_react_["useCallback"])(() => {
-    router_default.a.push('/write', undefined, {
-      shallow: true
-    });
-  }, []);
-  const onLogOut = Object(external_react_["useCallback"])(() => {
-    dispatch(Object(user["A" /* logoutRequestAction */])());
-    router_default.a.push('/', undefined, {
-      shallow: true
-    });
-  }, []);
-  return __jsx("div", null, __jsx("div", {
-    style: {
-      position: 'relative'
-    }
-  }, __jsx(Navbar, null, __jsx(external_antd_["Menu"], {
-    mode: "horizontal"
-  }, __jsx(external_antd_["Menu"].Item, {
-    key: 1
-  }, __jsx(link_default.a, {
-    href: "/"
-  }, __jsx("a", null, __jsx("h2", null, "\uD648")))))), __jsx("div", null, __jsx(LeftSidebar, null, __jsx(SidebarDiv, null, __jsx(SidebarUl, null, __jsx(link_default.a, {
-    href: "/"
-  }, __jsx(SidebarLi, null, __jsx("a", null, " \uC6B0\uB9AC\uB3D9\uB124 \uB80C\uD0C8\uB300\uC7A5"))), __jsx(link_default.a, {
-    href: "/objectreceive"
-  }, __jsx(SidebarLi, null, __jsx("a", null, " \uBB3C\uAC74\uC744 \uBE4C\uB824\uC918"))), __jsx(link_default.a, {
-    href: "/objectsend"
-  }, __jsx(SidebarLi, null, __jsx("a", null, " \uBB3C\uAC74\uC744 \uBE4C\uB824\uC904\uAC8C"))), __jsx(link_default.a, {
-    href: "/talentreceive"
-  }, __jsx(SidebarLi, null, __jsx("a", null, " \uD798\uC744 \uBE4C\uB824\uC918"))), __jsx(link_default.a, {
-    href: "/talentsend"
-  }, __jsx(SidebarLi, null, __jsx("a", null, " \uD798\uC744 \uBE4C\uB824\uC904\uAC8C"))), __jsx(link_default.a, {
-    href: "/cooperate"
-  }, __jsx(SidebarLi, null, __jsx("a", null, " \uAC19\uC774 \uD558\uC790"))), __jsx(link_default.a, {
-    href: "/playground"
-  }, __jsx(SidebarLi, null, __jsx("a", null, " \uB3D9\uB124 \uB180\uC774\uD130"))), __jsx(link_default.a, {
-    href: "/search"
-  }, __jsx(SidebarLi, null, __jsx("a", null, " \uB3D9\uB124 \uCE5C\uAD6C \uCC3E\uAE30"))), __jsx(link_default.a, {
-    href: "/profile"
-  }, __jsx(SidebarLi, null, __jsx("a", null, " \uD504\uB85C\uD544"))), __jsx("div", {
-    onClick: onLogOut
-  }, __jsx(SidebarLi, null, __jsx("a", null, " \uB85C\uADF8\uC544\uC6C3"))))))), __jsx("div", null, __jsx(RightSidebar, null, __jsx(SearchInput, {
-    enterButton: true,
-    value: searchInput,
-    onChange: onChangeSearchInput,
-    onSearch: onSearch
-  })), __jsx(external_antd_["Button"], {
-    style: writeButtonStyle,
-    onClick: onWrite
-  }, "\uAE00\uC4F0\uAE30"))), __jsx("div", {
-    style: {
-      marginTop: 100,
-      zIndex: 5
-    }
-  }, __jsx(external_antd_["Row"], {
-    gutter: 8
-  }, __jsx(external_antd_["Col"], {
-    xs: 7,
-    md: 7
-  }), __jsx(external_antd_["Col"], {
-    xs: 11,
-    md: 11
-  }, children), __jsx(external_antd_["Col"], {
-    xs: 6,
-    md: 6
-  }))));
-}
-
-/* harmony default export */ var AppLayout_AppLayout = (AppLayout);
-
-/***/ }),
-
 /***/ "ufKq":
 /***/ (function(module, exports) {
 
 module.exports = require("redux-devtools-extension");
-
-/***/ }),
-
-/***/ "vVTy":
-/***/ (function(module, exports) {
-
-module.exports = require("react-bootstrap/Button");
 
 /***/ }),
 

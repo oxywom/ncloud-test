@@ -351,12 +351,6 @@ var logo2_default = /*#__PURE__*/__webpack_require__.n(logo2);
 var next_link = __webpack_require__("YFqc");
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 
-// EXTERNAL MODULE: external "react-bootstrap/Navbar"
-var Navbar_ = __webpack_require__("lFrT");
-
-// EXTERNAL MODULE: external "react-bootstrap/Button"
-var Button_ = __webpack_require__("vVTy");
-
 // EXTERNAL MODULE: external "next/router"
 var router_ = __webpack_require__("4Q3z");
 var router_default = /*#__PURE__*/__webpack_require__.n(router_);
@@ -373,14 +367,8 @@ var useInput = __webpack_require__("3zrx");
 // EXTERNAL MODULE: ./components/SearchLocation.js
 var SearchLocation = __webpack_require__("G/SD");
 
-// EXTERNAL MODULE: ./reducers/post.js
-var post = __webpack_require__("p+NB");
-
 // CONCATENATED MODULE: ./components/Layout.js
 var __jsx = external_react_default.a.createElement;
-
-
-
 
 
 
@@ -978,7 +966,6 @@ var user = __webpack_require__("LAVF");
 var post = __webpack_require__("p+NB");
 
 // CONCATENATED MODULE: ./reducers/index.js
-
 
 
  // (이전상태,액션) => 다음상태
@@ -1807,9 +1794,6 @@ var Layout = __webpack_require__("5Yp1");
 // EXTERNAL MODULE: ./reducers/post.js
 var reducers_post = __webpack_require__("p+NB");
 
-// EXTERNAL MODULE: ./components/Tags.js
-var Tags = __webpack_require__("OoXJ");
-
 // EXTERNAL MODULE: external "antd"
 var external_antd_ = __webpack_require__("Exp3");
 
@@ -1830,7 +1814,7 @@ var __jsx = external_react_default.a.createElement;
 
 
 
-function SearchTags_Tags({
+function Tags({
   tagsData,
   boardNum,
   select,
@@ -1886,7 +1870,7 @@ function SearchTags_Tags({
   }, tag)));
 }
 
-/* harmony default export */ var SearchTags = (SearchTags_Tags);
+/* harmony default export */ var SearchTags = (Tags);
 // EXTERNAL MODULE: ./components/광고1.jpeg
 var _1 = __webpack_require__("mBmF");
 var _1_default = /*#__PURE__*/__webpack_require__.n(_1);
@@ -1922,7 +1906,6 @@ var external_redux_saga_ = __webpack_require__("1fKG");
 
 // CONCATENATED MODULE: ./pages/search/[searchInput].js
 var _searchInput_jsx = external_react_default.a.createElement;
-
 
 
 
@@ -2849,70 +2832,6 @@ const reducer = (state = initialState, action) => immer__WEBPACK_IMPORTED_MODULE
 });
 
 /* harmony default export */ __webpack_exports__["y"] = (reducer);
-
-/***/ }),
-
-/***/ "OoXJ":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("Exp3");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("h74D");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _reducers_post__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("p+NB");
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
-function Tags({
-  tagsData,
-  boardNum
-}) {
-  const {
-    CheckableTag
-  } = antd__WEBPACK_IMPORTED_MODULE_1__["Tag"];
-  const {
-    location
-  } = Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["useSelector"])(state => state.user);
-  const dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["useDispatch"])();
-  const {
-    0: selectedTags,
-    1: setSelectedTags
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
-  const handleChange = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])((tag, checked) => {
-    const nextSelectedTags = checked ? [tag] : selectedTags.filter(t => t !== tag);
-    setSelectedTags([...nextSelectedTags]);
-    dispatch({
-      type: _reducers_post__WEBPACK_IMPORTED_MODULE_3__[/* LOAD_CHANGE_TAG_REQUEST */ "k"],
-      data: nextSelectedTags[0],
-      // 현재 선택한 태그명
-      boardNum: boardNum,
-      location: location
-    });
-    dispatch({
-      type: _reducers_post__WEBPACK_IMPORTED_MODULE_3__[/* UPDATE_TAG */ "ib"],
-      data: nextSelectedTags[0] // 전역적으로 현재 선택한 태그를 공유한다.
-
-    });
-    console.log('You are interested in: ', nextSelectedTags);
-    console.log('You are interested in: ', nextSelectedTags[0]);
-  }, [location]);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    setSelectedTags(['전체']);
-  }, []);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, tagsData.map(tag => __jsx(CheckableTag, {
-    key: tag,
-    checked: selectedTags.indexOf(tag) > -1,
-    onChange: checked => handleChange(tag, checked)
-  }, tag)));
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (Tags);
 
 /***/ }),
 
@@ -4595,13 +4514,6 @@ module.exports = "/_next/static/images/광고2-e0a9c449fc5b3633d5131af325943d97.
 
 /***/ }),
 
-/***/ "lFrT":
-/***/ (function(module, exports) {
-
-module.exports = require("react-bootstrap/Navbar");
-
-/***/ }),
-
 /***/ "mBmF":
 /***/ (function(module, exports) {
 
@@ -5564,13 +5476,6 @@ module.exports = "/_next/static/images/wan-35d8930ebdd51ddb98b4718421aa9f40.png"
 /***/ (function(module, exports) {
 
 module.exports = require("redux-devtools-extension");
-
-/***/ }),
-
-/***/ "vVTy":
-/***/ (function(module, exports) {
-
-module.exports = require("react-bootstrap/Button");
 
 /***/ }),
 

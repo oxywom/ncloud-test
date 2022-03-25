@@ -165,7 +165,6 @@ var post = __webpack_require__("p+NB");
 // CONCATENATED MODULE: ./reducers/index.js
 
 
-
  // (이전상태,액션) => 다음상태
 
 const rootReducer = (state, action) => {

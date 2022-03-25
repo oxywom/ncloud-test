@@ -344,12 +344,6 @@ var logo2_default = /*#__PURE__*/__webpack_require__.n(logo2);
 var next_link = __webpack_require__("YFqc");
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 
-// EXTERNAL MODULE: external "react-bootstrap/Navbar"
-var Navbar_ = __webpack_require__("lFrT");
-
-// EXTERNAL MODULE: external "react-bootstrap/Button"
-var Button_ = __webpack_require__("vVTy");
-
 // EXTERNAL MODULE: external "next/router"
 var router_ = __webpack_require__("4Q3z");
 var router_default = /*#__PURE__*/__webpack_require__.n(router_);
@@ -366,14 +360,8 @@ var useInput = __webpack_require__("3zrx");
 // EXTERNAL MODULE: ./components/SearchLocation.js
 var SearchLocation = __webpack_require__("G/SD");
 
-// EXTERNAL MODULE: ./reducers/post.js
-var post = __webpack_require__("p+NB");
-
 // CONCATENATED MODULE: ./components/Layout.js
 var __jsx = external_react_default.a.createElement;
-
-
-
 
 
 
@@ -971,7 +959,6 @@ var user = __webpack_require__("LAVF");
 var post = __webpack_require__("p+NB");
 
 // CONCATENATED MODULE: ./reducers/index.js
-
 
 
  // (이전상태,액션) => 다음상태
@@ -3972,13 +3959,6 @@ function parseRelativeUrl(url, base) {
 
 /***/ }),
 
-/***/ "lFrT":
-/***/ (function(module, exports) {
-
-module.exports = require("react-bootstrap/Navbar");
-
-/***/ }),
-
 /***/ "nOHt":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4941,13 +4921,6 @@ module.exports = "/_next/static/images/wan-35d8930ebdd51ddb98b4718421aa9f40.png"
 /***/ (function(module, exports) {
 
 module.exports = require("redux-devtools-extension");
-
-/***/ }),
-
-/***/ "vVTy":
-/***/ (function(module, exports) {
-
-module.exports = require("react-bootstrap/Button");
 
 /***/ }),
 
